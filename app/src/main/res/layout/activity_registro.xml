@@ -8,6 +8,22 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:id="@+id/campoNombre"
+        android:layout_width="349dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
         android:id="@+id/campoDocumento"
         android:layout_width="347dp"
         android:layout_height="44dp"
@@ -22,38 +38,22 @@
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/campoTelefono"
-        app:layout_constraintVertical_bias="0.003" />
+        app:layout_constraintVertical_bias="0.006" />
 
     <EditText
-        android:id="@+id/campoNombre"
-        android:layout_width="349dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:fontFamily="@font/poppins_light"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
-
-    <EditText
-        android:id="@+id/campoDireccion"
-        android:layout_width="348dp"
-        android:layout_height="41dp"
+        android:id="@+id/campoEdad"
+        android:layout_width="347dp"
+        android:layout_height="47dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:fontFamily="@font/poppins_light"
-        android:hint="Direccion"
-        android:inputType="textPersonName"
+        android:hint="Edad"
+        android:inputType="phone"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/campoDireccion" />
 
     <EditText
         android:id="@+id/campoTelefono"
@@ -71,19 +71,19 @@
         app:layout_constraintTop_toBottomOf="@+id/campoEdad" />
 
     <EditText
-        android:id="@+id/campoEdad"
-        android:layout_width="347dp"
-        android:layout_height="47dp"
+        android:id="@+id/campoDireccion"
+        android:layout_width="348dp"
+        android:layout_height="41dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:fontFamily="@font/poppins_light"
-        android:hint="Edad"
-        android:inputType="phone"
+        android:hint="Direccion"
+        android:inputType="textPersonName"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/campoDireccion" />
+        app:layout_constraintTop_toBottomOf="@+id/campoNombre" />
 
     <TextView
         android:id="@+id/textView"
@@ -104,112 +104,168 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/poppins_light"
-            android:text="Notas"
-            android:textColor="@color/black"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/campoDocumento" />
 
-        <EditText
-            android:id="@+id/campoMateria1"
-            android:layout_width="169dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:fontFamily="@font/poppins_light"
-            android:hint="Materia"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/editTextPhone4"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="359dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Notas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoDocumento" />
 
-        <EditText
-            android:id="@+id/editTextPhone4"
-            android:layout_width="161dp"
-            android:layout_height="43dp"
-            android:ems="10"
-            android:fontFamily="@font/poppins_light"
-            android:hint="Nota"
-            android:inputType="phone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="359dp" />
+    <EditText
+        android:id="@+id/campoNota5"
+        android:layout_width="158dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNota4"
+        tools:ignore="MissingConstraints" />
 
-        <EditText
-            android:id="@+id/campoMateria2"
-            android:layout_width="170dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:fontFamily="@font/poppins_light"
-            android:hint="Materia"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/editTextPhone5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/campoMateria1"
-            tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/campoMateria1"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Materia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/campoNota1"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="320dp" />
 
-        <EditText
-            android:id="@+id/editTextPhone5"
-            android:layout_width="161dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:fontFamily="@font/poppins_light"
-            android:hint="Nota"
-            android:inputType="phone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone4"
-            tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/campoMateria2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Materia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/campoNota2"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoMateria1"
+        tools:ignore="MissingConstraints" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName6"
-            android:layout_width="167dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:hint="Materia"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toStartOf="@+id/editTextPhone6"
-            app:layout_constraintHorizontal_bias="0.482"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/campoMateria2" />
+    <EditText
+        android:id="@+id/campoNota2"
+        android:layout_width="161dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nota"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNota1"
+        tools:ignore="MissingConstraints" />
 
-        <EditText
-            android:id="@+id/editTextPhone6"
-            android:layout_width="159dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="12dp"
-            android:ems="10"
-            android:hint="Nota"
-            android:inputType="phone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.892"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone5" />
+    <EditText
+        android:id="@+id/campoNota4"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNota3"
+        tools:ignore="MissingConstraints" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName7"
-            android:layout_width="166dp"
-            android:layout_height="43dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="514dp"
-            tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/campoNota1"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nota"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <EditText
+        android:id="@+id/campoMateria3"
+        android:layout_width="167dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Materia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/campoNota3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoMateria2" />
+
+    <EditText
+        android:id="@+id/campoNota3"
+        android:layout_width="159dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNota2" />
+
+    <EditText
+        android:id="@+id/campoMateria4"
+        android:layout_width="166dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Materia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoMateria3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/campoMateria5"
+        android:layout_width="168dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Materia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoMateria4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="106dp"
+        android:layout_height="44dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

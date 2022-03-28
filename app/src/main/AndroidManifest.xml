@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentsViewa">
         <activity
-            android:name=".RegistroActivity"
+            android:name=".registerForActivityReslt"
             android:exported="false" />
         <activity
-            android:name=".Main_Notas"
+            android:name=".RegistroActivity"
             android:exported="false" />
         <activity
             android:name=".Main_Registro"
